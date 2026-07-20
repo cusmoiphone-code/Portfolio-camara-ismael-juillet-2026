@@ -7,14 +7,60 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #4405cd;
-    background-color: #020101;
+    color: #050308;
+    background-color: #f7f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    background: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#theme-toggle {
+    background: #1f2937;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body.dark-mode nav a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li {
+    color: #f9fafb;
+}
+
+body.dark-mode section,
+body.dark-mode header,
+body.dark-mode .carte-projet {
+    background-color: #1f2937;
+}
+
+.carte-projet.selected {
+    border: 2px solid #007bff;
+    transform: scale(1.02);
 }
 
 /* --- Navigation --- */
 header {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -52,7 +98,7 @@ main {
 }
 
 section {
-    background: #000000;
+    background: #ffffff;
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
@@ -93,13 +139,4 @@ footer {
     padding: 1.5rem;
     background-color: #1a1a1a;
     color: #fff;
-}
-Comment vérifier que le lien fonctionne ?
-Vérifiez que cette ligne est bien présente dans la balise <head> de votre index.html :
-
-HTML
-<link rel="stylesheet" href="style.css">/* Portfolio stylesheet */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
 }
