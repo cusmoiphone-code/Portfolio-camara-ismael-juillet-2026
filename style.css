@@ -7,8 +7,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #4405cd;
+    background-color: #020101;
 }
 
 /* --- Navigation --- */
@@ -52,7 +52,7 @@ main {
 }
 
 section {
-    background: #fff;
+    background: #000000;
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
