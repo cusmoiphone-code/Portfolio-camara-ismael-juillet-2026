@@ -13,7 +13,7 @@ if (themeToggle) {
 
 if (accueilButton && accueilMessage) {
     accueilButton.addEventListener('click', () => {
-        accueilMessage.textContent = 'Bienvenue sur mon portfolio, suivez mon évolution en tant que développeur à mes côtés!';
+        accueilMessage.textContent = 'Bienvenue sur mon portfolio, suivez mon évolution en tant que VibeCoder à mes côtés!';
     });
 }
 
